@@ -1,0 +1,15 @@
+{
+  "name": "techn_bt_tg_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "Arkhipov Daniil",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.9",
+    "node-telegram-bot-api": "^0.63.0"
+  }
+}
