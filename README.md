@@ -17,6 +17,11 @@
     ```bash
     npm start
     ```
+4. Запуск на сервере:
+    ```bash
+    npm install pm2 --location=global
+    pm2 start npm --name "techn_bt_tg_bot" -- start
+    ```
 
 ## Usage
 
