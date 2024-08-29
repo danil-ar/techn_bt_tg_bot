@@ -13,3 +13,10 @@ bot.onText(/\/menu/, (msg) => {
     };
     bot.sendMessage(chatId, "⌨️", options);
 });
+
+// Обработчик для приветствия новых участников
+bot.on("new_chat_members", (msg) => {
+    const chatId = msg.chat.id;
+    const newMembers = msg.new_chat_members.map((user) => (user.username ? `@${user.username}` : user.first_name)).join(", ");
+    bot.sendMessage(chatId, `Добро пожаловать, ${newMembers}!\n\nЭта группа предназначена для решения технических вопросов и обсуждения системных событий, таких как сбои, перезагрузки и другие технические темы. Для получения доступа к быстрым командам используйте /menu.`);
+});
